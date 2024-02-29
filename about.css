@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&family=Ysabeau+Office:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #FDFFC2;
+    font-family: Montserrat;
+}
+body{
+    background-color: rgb(22, 19, 19);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+.navlinks{
+    list-style: none;
+    font-family: 'Dancing Script',cursive;
+}
+.navlinks li{
+    display: inline-block;
+    padding:3px 15px 3px 15px;
+    font-size: smaller;
+}
+.navlink li a{
+    transition: all 1s ease 0s;
+    padding-left: 20px;
+}
+.navlinks li:hover a:hover{
+    text-shadow: 0px 0px 7px rgba(239,249,177), 0px 0px 3px rgb(239, 252, 95);
+    font-size: 115%;
+    transition: all 0.3s ease 0s;
+}
+.head{
+    text-align: center;
+    padding-top: 4%;
+}
+.con1{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(22, 19, 19);
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgb(22, 19, 19),#FDFFC2,rgb(22, 19, 19));
+}
+.cons{
+    list-style: none;
+    line-height: 250%;
+}
+.cons li a{
+    transition: all 0.3s ease 0s;
+}
+.cons li:hover a:hover{
+    font-size: 140%;
+    text-shadow: 0px 0px 10px rgb(202, 210, 131), 0px 0px 5px rgb(248, 255, 182);
+    color: #FDFFC2;
+}
+.active{
+    background-color: #FDFFC2;
+    color: rgb(22, 19, 19);
+    border-radius: 6px;
+}
+@media screen and (max-width: 600px){
+    .logo{
+        width: 100px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .logo{
+        width: 90px;
+    }
+    .navlinks li{
+        display: block;
+    }
+}
+

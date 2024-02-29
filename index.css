@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&family=Ysabeau+Office:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #FDFFC2;
+    font-family: Montserrat;
+}
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+body{
+    background-color: rgb(22, 19, 19);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+.navlinks{
+    list-style: none;
+    font-family: 'Dancing Script',cursive;
+}
+.navlinks li{
+    display: inline-block;
+    padding: 3px 15px 3px 15px;
+    font-size: smaller;
+}
+.navlink li a{
+    transition: all 0s ease 0s;
+}
+.navlinks li:hover a:hover{
+    text-shadow: 0px 0px 7px rgba(239,249,177), 0px 0px 3px rgb(239, 252, 95);
+    transition: all 0.3s ease 0s;
+}
+.head{
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+.below_head{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15%;
+}
+.lang{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 20px;
+    perspective: 10px;
+}
+.lang li{
+    display: inline-block;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(22, 19, 19);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: linear-gradient(rgb(22, 19, 19),#FDFFC2,rgb(22, 19, 19));
+}
+.Project{
+    padding-top: 15%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.project_list{
+    display: block;
+    align-self: center;
+}
+.project_head{
+    text-align: center;
+}
+hr {
+    display: block;
+    color: #FDFFC2;
+    width: 75%;
+    margin: auto;
+}
+.active{
+    background-color: #FDFFC2;
+    color: rgb(22, 19, 19);
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 600px){
+    .logo{
+        width: 100px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .logo{
+        width: 90px;
+    }
+    .navlinks li{
+        display: block;
+    }
+}
